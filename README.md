@@ -84,7 +84,7 @@ After Terraform completes, connect to the bastion VM from the GCP Console or wit
 
 ## 6. Configure gcloud on Bastion
 
-On the bastion VM, verify the tools: and installl 
+On the bastion VM, verify the tools and install 
 ```
 apt update -y
 sudo apt install -y google-cloud-cli
@@ -98,7 +98,7 @@ gcloud --version
 kubectl version --client
 ```
 
-Login if required:
+Log in if required:
 
 ```bash
 gcloud auth login
@@ -118,12 +118,12 @@ gcloud config set compute/zone us-central1-a
 
 ## 7. Get GKE Cluster Credentials
 
-The Terraform cluster name is `veera`.
+The Terraform cluster name is `murthy`.
 
 Run this from the bastion VM:
 
 ```bash
-gcloud container clusters get-credentials veera --location us-central1-a
+gcloud container clusters get-credentials murthy --location us-central1-a
 ```
 
 Verify access:
