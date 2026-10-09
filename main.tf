@@ -85,7 +85,7 @@ resource "google_compute_instance" "bastion" {
 #####################################################
 resource "google_container_cluster" "gke" {
 
-  name     = "veera"
+  name     = "murthy"
   location = var.zone
 
   deletion_protection = false
